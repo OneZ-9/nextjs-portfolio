@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -19,12 +20,30 @@ const TAB_DATA = [
     ),
   },
   {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>BSc in Management Information Systems - NSBM Green University</li>
+        <li>
+          Diploma in Desktop Publishing & Graphic Design - National Youth
+          Services Council
+        </li>
+        <li>Physical Science(2014-2017) - Isipathana College</li>
+      </ul>
+    ),
+  },
+  {
     title: "Education",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>BSc in Management Information Systems - NSBM Green University</li>
+        <li>
+          Diploma in Desktop Publishing & Graphic Design - National Youth
+          Services Council
+        </li>
+        <li>Physical Science(2014-2017) - Isipathana College</li>
       </ul>
     ),
   },
@@ -33,8 +52,29 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>
+          AI-Driven Full Stack Development Professional Certification - STEM
+          Link
+        </li>
+        <li>
+          <Link
+            href="https://proconsacademy.com/dlp/admin/tool/certificate/index.php?code=1393727075PR"
+            target="_blank"
+            className="hover:underline"
+          >
+            Agile Project Management Workshop with Jira - Procons Academy
+          </Link>
+        </li>
+        <li>Scrum Foundations Professional Certificate - CertiProf</li>
+        <li>
+          <Link
+            href="https://www.coursera.org/account/accomplishments/certificate/CE2B9DYBNYEU"
+            target="_blank"
+            className="hover:underline"
+          >
+            Introduction to Data Analytics for Business - Coursera
+          </Link>
+        </li>
       </ul>
     ),
   },
@@ -51,9 +91,14 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white lg:py-20" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image
+          src="/images/about2.png"
+          alt="About me"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -71,6 +116,13 @@ const AboutSection = () => {
             >
               {" "}
               Skills{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              {" "}
+              Experience{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}

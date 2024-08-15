@@ -7,57 +7,62 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "HirelyAi",
+    description:
+      "HirelyAi is a modern hiring platform that leverages AI for smart candidate filtering and evaluation. MERN Project includes CRUD Operations and file upload.",
+    image: "/images/projects/hirelyai.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/OneZ-9/hirelyai-v1.0-frontend",
+    previewUrl: "https://hirelyai-chamod.netlify.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Wood Heaven Website - Ongoing",
+    description:
+      "Learning demo project built with NextJS +Tailwind and Supabase. Includes CRUD Operations. Feature enhancements ongoing..",
+    image: "/images/projects/",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/OneZ-9/the-wood-heaven-website",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Wood Heaven Demo - Ongoing",
+    description:
+      "Learning demo project built with React, Supabase and React-recharts. Ongoing feature enhancements..",
+    image: "/images/projects/wood-heaven-demo.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/OneZ-9/the-wood-heaven--demo",
+    previewUrl: "https://wood-heaven-chamod.netlify.app/login",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Fast Pizza Demo App",
+    description:
+      "Simple demo project for ordering pizza from conceptual Fast-Pizza-Co.",
+    image: "/images/projects/fast-pizza.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/OneZ-9/-Demo-Project--fast-pizza",
+    previewUrl: "https://fast-pizza-demo.netlify.app/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "NextJS Portfolio - Ongoing",
+    description: "Customized NextJS Portfilo project using NextJS template.",
+    image: "/images/projects/",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Omni-food",
+    description:
+      "Static web page built with html and css to practice mobile responsive design.",
+    image: "/images/projects/omnifood.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/OneZ-9/Omnifood--CSS",
+    previewUrl: "https://responsive-omnifood-democss.netlify.app/",
   },
 ];
 
@@ -80,7 +85,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" className="lg:py-20">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
