@@ -20,10 +20,10 @@ const projectsData = [
     title: "Wood Heaven Website - Ongoing",
     description:
       "Learning demo project built with NextJS +Tailwind and Supabase. Includes CRUD Operations. Feature enhancements ongoing..",
-    image: "/images/projects/",
+    image: "/images/projects/wood-heaven-website.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/OneZ-9/the-wood-heaven-website",
-    previewUrl: "/",
+    previewUrl: "https://the-wood-heaven-website-chamod.vercel.app/",
   },
   {
     id: 3,
@@ -49,10 +49,10 @@ const projectsData = [
     id: 5,
     title: "NextJS Portfolio - Ongoing",
     description: "Customized NextJS Portfilo project using NextJS template.",
-    image: "/images/projects/",
+    image: "/images/projects/chamod-portfolio.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/OneZ-9/nextjs-portfolio",
+    previewUrl: "https://chamod-portfolio.vercel.app/",
   },
   {
     id: 6,

@@ -9,13 +9,18 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
+      <ul className="list-disc pl-2 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-x-5">
         <li>React</li>
+        <li>NextJS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Express</li>
+        {/* <li>Node.js</li> */}
+        <li>Supabase</li>
+        <li>MongoDB</li>
+        {/* <li>PostgreSQL</li> */}
+        <li>TailwindCSS</li>
+        <li>Programming with OOP</li>
       </ul>
     ),
   },
@@ -23,27 +28,65 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-2">
-        <li>BSc in Management Information Systems - NSBM Green University</li>
-        <li>
-          Diploma in Desktop Publishing & Graphic Design - National Youth
-          Services Council
-        </li>
-        <li>Physical Science(2014-2017) - Isipathana College</li>
-      </ul>
+      <>
+        <div className="mb-8">
+          <p className="md:text-lg mb-1">Data Capture Experts</p>
+          <ul className="list-disc pl-8 flex flex-col gap-y-2">
+            <li>
+              Senior Project Coordinator{" "}
+              <span className="text-xs text-[#ADB7BE] italic">
+                (Jul 2023 - May 2024)
+              </span>
+            </li>
+            <li>
+              Junior Project Coordinator{" "}
+              <span className="text-xs text-[#ADB7BE] italic">
+                (Jan 2022 - Jul 2023)
+              </span>
+            </li>
+            <li>
+              Intern Project Coordinator{" "}
+              <span className="text-xs text-[#ADB7BE] italic">
+                (Jun 2021 - Dec 2021)
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p className="md:text-lg mb-1">LOLC Development Finance</p>
+          <ul className="list-disc pl-8 flex flex-col gap-y-2">
+            <li>
+              Trainee - Credit Department{" "}
+              <span className="text-xs text-[#ADB7BE] italic">
+                (Aug 2018 - Apr 2019)
+              </span>
+            </li>
+          </ul>
+        </div>
+      </>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>BSc in Management Information Systems - NSBM Green University</li>
-        <li>
-          Diploma in Desktop Publishing & Graphic Design - National Youth
-          Services Council
+      <ul className="list-disc pl-2 flex flex-col gap-y-4">
+        <li className="md:text-lg">
+          BSc in Management Information Systems{" "}
+          <span className="text-sm text-[#ADB7BE]">
+            - NSBM Green University
+          </span>
         </li>
-        <li>Physical Science(2014-2017) - Isipathana College</li>
+        <li className="md:text-lg">
+          Diploma in Desktop Publishing & Graphic Design{" "}
+          <span className="text-sm text-[#ADB7BE]">
+            - National Youth Services Council
+          </span>
+        </li>
+        <li className="md:text-lg">
+          Physical Science (2014-2017){" "}
+          <span className="text-sm text-[#ADB7BE]">- Isipathana College</span>
+        </li>
       </ul>
     ),
   },
@@ -51,7 +94,10 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 flex flex-col gap-y-4">
+        <li>
+          The Ultimate React Course 2024: React, Next.js, Redux & More - Udemy
+        </li>
         <li>
           AI-Driven Full Stack Development Professional Certification - STEM
           Link
@@ -92,7 +138,7 @@ const AboutSection = () => {
 
   return (
     <section className="text-white lg:py-20" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about2.png"
           alt="About me"
@@ -104,10 +150,11 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            working with latest technologies like React, NextJS, Express,
+            PostgreSQL, Supabase, MongoDB, Tailwind, and Git. I am a quick
+            learner and always looking to expand my knowledge and skill set. I
+            am a team player and excited to work with others to create amazing
+            applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

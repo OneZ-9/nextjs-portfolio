@@ -51,7 +51,9 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="/files/Chamod_Tharuka_Resume.pdf"
+              target="_blank"
+              download
               // className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-emerald-600 to-emerald-600 hover:bg-slate-800 text-emerald-50 mt-3"
             >
@@ -67,7 +69,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ml-4 border-solid border-2 border-emerald-600 border-opacity-50">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ml-4 border-solid border-2 border-emerald-600 border-opacity-50 animate-floating">
             <Image
               src="/images/hero-image.png"
               alt="hero image"
