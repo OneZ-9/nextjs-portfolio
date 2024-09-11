@@ -17,7 +17,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Wood Heaven Website - Ongoing",
+    title: "Wood Heaven Website",
     description:
       "Learning demo project built with NextJS +Tailwind and Supabase. Includes CRUD Operations. Feature enhancements ongoing..",
     image: "/images/projects/wood-heaven-website.png",
@@ -27,7 +27,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Wood Heaven Demo - Ongoing",
+    title: "Wood Heaven Demo",
     description:
       "Learning demo project built with React, Supabase and React-recharts. Ongoing feature enhancements..",
     image: "/images/projects/wood-heaven-demo.png",
@@ -47,7 +47,7 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "NextJS Portfolio - Ongoing",
+    title: "NextJS Portfolio",
     description: "Customized NextJS Portfilo project using NextJS template.",
     image: "/images/projects/chamod-portfolio.png",
     tag: ["All", "Web"],

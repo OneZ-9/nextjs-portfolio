@@ -13,12 +13,11 @@ function EmailForm() {
           Your email
         </label>
         <input
-          disabled
           name="email"
           type="email"
           id="email"
           required
-          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 cursor-not-allowed"
+          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
           placeholder="jacob@google.com"
         />
       </div>
@@ -30,12 +29,11 @@ function EmailForm() {
           Subject
         </label>
         <input
-          disabled
           name="subject"
           type="text"
           id="subject"
           required
-          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 cursor-not-allowed"
+          className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
           placeholder="Let's Discuss How We Can Work Together"
         />
       </div>
@@ -61,10 +59,10 @@ function EmailForm() {
       >
         Send Message
       </button>
-      <p className="text-[#9CA2A9] text-xs mt-2">
+      {/* <p className="text-[#9CA2A9] text-xs mt-2">
         *This form functionality is still in-development, please contact me via
         email provided.
-      </p>
+      </p> */}
     </form>
   );
 }
